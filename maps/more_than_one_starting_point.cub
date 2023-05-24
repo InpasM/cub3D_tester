@@ -1,0 +1,13 @@
+NO textures/north_texture
+SO textures/south_texture
+WE textures/west_texture
+EA textures/east_texture
+
+F 220,100,0
+C 225,30,0
+
+111111
+1001W1
+1S1001
+1E00N1
+111111
