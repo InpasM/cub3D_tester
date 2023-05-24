@@ -1,6 +1,6 @@
-NO textures/north_texture
-SO textures/south_texture
-WE textures/west_texture
+NO cub3d_tester/textures/north_texture
+SO cub3d_tester/textures/south_texture
+WE cub3d_tester/textures/west_texture
 
 F 220,100,0
 C 225,30,0

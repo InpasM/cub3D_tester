@@ -1,7 +1,7 @@
-NO textures/invalid_south_texture
-SO textures/invalid_south_texture
-WE textures/west_texture
-EA textures/east_texture
+NO cub3d_tester/textures/invalid_south_texture
+SO cub3d_tester/textures/invalid_south_texture
+WE cub3d_tester/textures/west_texture
+EA cub3d_tester/textures/east_texture
 
 F 220,100,0
 C 225,30,0
