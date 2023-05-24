@@ -84,7 +84,7 @@ PRINT_CATEGORY()
 	printf "# ###################################### #$NOCOLOR\n\n"
 }
 
-$(norminette -R CheckForbiddenSourceHeader ../sources/ > /dev/null 2>&1)
+$(norminette -R CheckForbiddenSourceHeader ${BASEDIR}/../sources/ > /dev/null 2>&1)
 if [ "$?" -gt "0" ]
 then
 	CHECK_NORM="\n${BRED}NORME: KO${NOCOLOR}\n"
