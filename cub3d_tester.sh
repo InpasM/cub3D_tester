@@ -25,6 +25,11 @@ BASEDIR=$(dirname "$0")
 INVALID_MAP="${BASEDIR}/maps/non_existing_map"
 SIMPLE_MAP="${BASEDIR}/maps/simple_map.cub"
 
+if [ ! -f "${BASEDIR}/../cub3d" ]
+then
+	$(make -s -C ${BASEDIR}/../)
+fi
+
 NAME_CUB3D=( 		
 					"no argument:  ${BASEDIR}/../cub3d"
 					"too many arguments:  ${BASEDIR}/../cub3d argument1 argument2"
@@ -92,7 +97,6 @@ else
 	CHECK_NORM="\n${BGRN}NORME: OK${NOCOLOR}\n"
 fi
 
-make -s -C ../
 clear
 
 PRINT_CATEGORY "CUB3D"
