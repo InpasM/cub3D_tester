@@ -58,6 +58,9 @@ NAME_CUB3D=(
 					"invalid texture 3:  ${BASEDIR}/../cub3d ${BASEDIR}/maps/invalid_west.cub"
 					"invalid texture 4:  ${BASEDIR}/../cub3d ${BASEDIR}/maps/invalid_east.cub"
 
+					"duplicate texture:  ${BASEDIR}/../cub3d ${BASEDIR}/maps/duplicate_texture.cub"
+					"duplicate rgb:  ${BASEDIR}/../cub3d ${BASEDIR}/maps/duplicate_rgb.cub"
+
 					"invalid multi texture 1:  ${BASEDIR}/../cub3d ${BASEDIR}/maps/invalid_multi_1.cub"
 					"invalid multi texture 2:  ${BASEDIR}/../cub3d ${BASEDIR}/maps/invalid_multi_2.cub"
 					"invalid multi texture 3:  ${BASEDIR}/../cub3d ${BASEDIR}/maps/invalid_multi_3.cub"
