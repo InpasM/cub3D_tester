@@ -1,7 +1,7 @@
-NO textures/invalid_south_texture
-SO textures/invalid_south_texture
-WE textures/west_texture
-EA textures/east_texture
+NO textures/invalid_checker_south.xpm
+SO textures/invalid_checker_south.xpm
+WE textures/checker_west.xpm
+EA textures/checker_east.xpm
 
 F 220,100,0
 C 225,30,0

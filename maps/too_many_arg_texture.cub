@@ -1,7 +1,7 @@
-NO textures/north_texture other_arg
-SO textures/south_texture other_arg
-WE textures/west_texture
-EA textures/east_texture
+NO textures/checker_north.xpm other_arg
+SO textures/checker_south.xpm other_arg
+WE textures/checker_west.xpm
+EA textures/checker_east.xpm
 
 F 220,100,0
 C 225,30,0

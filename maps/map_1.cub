@@ -1,11 +1,10 @@
-NO textures/checker_north.xpm
-SO textures/checker_south.xpm
-WE textures/checker_west.xpm
-EA textures/checker_east.xpm
+NO textures/wall.xpm
+SO textures/wall.xpm
+WE textures/wall.xpm
+EA textures/wall.xpm
 
-F 220,100,0
-F 220,100,0
-C 225,30,0
+F 116,81,6
+C 0,0,0
 
         1111111111111111111111111
         1000000000010000000000001
