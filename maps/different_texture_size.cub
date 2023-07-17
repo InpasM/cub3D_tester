@@ -1,0 +1,18 @@
+NO textures/checker_north-128.xpm
+SO textures/checker_south-256.xpm
+WE textures/checker_west-64.xpm
+EA textures/checker_east-32.xpm
+
+F 34,139,34
+C 135,206,235
+
+11111
+100011
+100011
+10S001
+100011
+10001
+10001
+10001
+10001
+11111

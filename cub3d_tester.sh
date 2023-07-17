@@ -58,6 +58,8 @@ NAME_CUB3D=(
 					"invalid texture 3:  ${BASEDIR}/../cub3d ${BASEDIR}/maps/invalid_west.cub"
 					"invalid texture 4:  ${BASEDIR}/../cub3d ${BASEDIR}/maps/invalid_east.cub"
 
+					"corrupt xpm north:  ${BASEDIR}/../cub3d ${BASEDIR}/maps/corrupt_xpm_north.cub"
+
 					"duplicate texture:  ${BASEDIR}/../cub3d ${BASEDIR}/maps/duplicate_texture.cub"
 					"duplicate rgb:  ${BASEDIR}/../cub3d ${BASEDIR}/maps/duplicate_rgb.cub"
 
@@ -127,8 +129,8 @@ do
 		DISPLAY_LEAKS=$(eval "zsh -c 'valgrind --leak-check=full --show-leak-kinds=all $CMD_CUB3D'" 2>&1)
 		SHOW_LEAK=$(echo "$DISPLAY_LEAKS")
 		SHORT_LEAK=$(echo "$DISPLAY_LEAKS" | grep -e "ERROR SUMMARY:" -e "total heap usage:")
-		NB_ALLOCS=$(echo "$DISPLAY_LEAKS" | grep -e "total heap usage:" | cut -d ":" -f 2 | cut -d "," -f 1 | cut -d " " -f 2)
-		NB_FREES=$(echo "$DISPLAY_LEAKS" | grep -e "total heap usage:" | cut -d ":" -f 2 | cut -d "," -f 2 | cut -d " " -f 2)
+		NB_ALLOCS=$(echo "$DISPLAY_LEAKS" | grep -e "total heap usage:" | cut -d ":" -f 2 | cut -d " " -f 2 | tr -d ,)
+		NB_FREES=$(echo "$DISPLAY_LEAKS" | grep -e "total heap usage:" | cut -d ":" -f 2 | cut -d " " -f 2 | tr -d ,)
 		NB_ERROR=$(echo "$DISPLAY_LEAKS" | grep -e "ERROR SUMMARY:" | cut -d ":" -f 2 | cut -d " " -f 2)
 	fi
 
